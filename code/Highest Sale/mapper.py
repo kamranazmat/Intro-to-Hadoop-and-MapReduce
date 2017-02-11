@@ -3,7 +3,7 @@
 # Format of each line is:
 # date\ttime\tstore name\titem description\tcost\tmethod of payment
 #
-# We want elements 2 (item type) and 4 (cost)
+# We want elements 2 (store name) and 4 (cost)
 # We need to write them out to standard output, separated by a tab
 # Kamran Azmat
 
@@ -15,5 +15,5 @@ for line in sys.stdin:
 	continue
     else:
         date, time, store, item, cost, payment = data
-        print "{0}\t{1}".format(item, cost)
+        print "{0}\t{1}".format(store, cost)
 
